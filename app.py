@@ -42,7 +42,6 @@ def webhook():
                     message_text = messaging_event["message"]["text"]  # the message's text
 
                     send_message(sender_id, "Chào bạn, cảm ơn bạn đã liên hệ đến trang.")
-                    send_message(sender_id, "Bạn cần giúp gì ạ?")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
