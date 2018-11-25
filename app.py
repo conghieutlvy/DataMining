@@ -41,7 +41,8 @@ def webhook():
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
 
-                    send_message(sender_id, "roger that!")
+                    send_message(sender_id, "Chào bạn, cảm ơn bạn đã gửi tin nhắn đến trang.")
+                    send_message(sender_id, "Chúng tôi có thể giúp gì cho bạn?")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
